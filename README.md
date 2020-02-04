@@ -110,10 +110,10 @@ After modifying the `*_types.go` file always run the following command to update
 $ operator-sdk generate k8s
 ```
 
-Also run the following command in order to automatically generate the OpenAPI validations.
+Also run the following command in order to update the Custom Resource Definitions (CRDs) corresponding to API's group and kind:
 
 ```sh
-$ operator-sdk generate openapi
+$ operator-sdk generate crds
 ```
 
 You can see the changes applied in `deploy/crds/cache.example.com_memcacheds_crd.yaml`
